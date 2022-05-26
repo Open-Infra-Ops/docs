@@ -120,8 +120,8 @@
   /usr/bin/pgweb --bind=0.0.0.0 --listen=8081
   ```
 
-  
 # 
+
 ### 构建
 
   > 上面使用ARG，因此可以实现不传参构建和传参构建;
@@ -139,3 +139,19 @@
   ```
 
   
+
+# 
+
+### 不侵入容器执行指令
+
+不侵入容器作用是：可以在特殊场景下不启动bash，可以直接查看进程是否正常
+
+```bash
+docker exec <docker_image:version> ps -ef
+docker exec <docker_image:version> netstat -tunlp
+```
+
+> 需要容器本身已经支持ps 、netstat等指令；否则仍然无法查看；
+>
+> 执行指令不需要带''；如：`docker exec <docker_image:version> "ps -ef"`,会引起报错；
+
