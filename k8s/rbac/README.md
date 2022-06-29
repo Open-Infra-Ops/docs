@@ -27,11 +27,10 @@ configmap、pod等，操作包括创建、删除、获取等。
 
  - **生成kubeconfig文件**<br>
 **kubectl get secret -n namespace | grep my-sa **<br>            # **serviceaccount**的名称**my-sa**获取对应的密钥，第一列的**my-sa-token-5gpl4**，即为密钥名<br>
-**kubectl config set-cluster test-arm --server=https://10.0.1.100:5443 --kubeconfig=./test.config --insecure-skip-tls-verify=true**<br>                                                 # 生成kubeconfig文件，其中**test-arm**为需要访问的集群，**https://10.0.1.100:5443**为集群**apiserver**地址，通常需要从外网访问集群，一般配置apiserver的公网ip<br>
+**kubectl config set-cluster test-arm --server=https://10.0.1.100:5443 --kubeconfig=./test.config --insecure-skip-tls-verify=true**<br>                                                 # 生成kubeconfig文件，其中**test-arm**为需要访问的集群，**https://10.0.1.100:5443**为集群apiserver地址，通常需要从外网访问集群，一般配置apiserver的公网ip<br>
 **token=$(kubectl describe secret my-sa-token-5gpl4 -n namespace | awk '/token:/{ print \$2}')**<br>           #获取集群token<br>
 **kubectl config set-credentials ui-admin --token=$token --kubeconfig=./test.config**<br> # 设置集群用户**ui-admin**，此用户名任意，指定的kubeconfig路径即为生成的kubeconfig文件存放路径<br>
 **kubectl config set-context ui-admin@namespace --cluster=test-arm --user=ui-admin --kubeconfig=./test.config**<br>            # 配置上下文信息，**ui-admin**、**namespace**、**test-arm**、**./test.config**分别为前文中指定的**用户名**、**命名空间**、**集群名称**、**kubeconfig路径**<br>
-
 **kubectl config use-context ui-admin@namespace --kubeconfig=./test.config**<br>        # 设置上下文信息
 
  # shell脚本生成kubeconfig
