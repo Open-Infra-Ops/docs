@@ -34,14 +34,14 @@ configmap、pod等，操作包括创建、删除、获取等。
 **kubectl config use-context ui-admin@namespace --kubeconfig=./test.config**<br>        # 设置上下文信息
 
  # shell脚本生成kubeconfig
- - **环境准备**
+ - **环境准备**<br>
 kubectl
 [# Install Kubectl](https://kubernetes.io/docs/tasks/tools/)<br>
 
- - **使用对象**
+ - **使用对象**<br>
  k8s集群管理员
  
- - **执行命令**
+ - **执行命令**<br>
  ./script.sh namespace cluster_name kubeconfig_path apiserver_url cluster_user<br>      # **namespace**，授权的命名空间<br>       # **cluster_name** ，集群名称<br>      # **kubeconfig_path**，生成的kubeconfig存放路径<br>  # **apiserver_url**，集群apiserver地址，格式**https://10.0.1.100:5443**<br>     # **cluster_user**，创建的kubeconfig用户对象名
 
 
