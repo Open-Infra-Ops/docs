@@ -16,4 +16,8 @@
 5. jenkins备份恢复在openEuler闭环。————zhuchao
 6. 及时响应处理公司护网行动问题。————zhaochunjiang
 7. 完成openEuler官网根据源地址跳转不同语言环境需求。————liuyang
-8. 
+8. 机器人适配到github代码平台。————wanghao
+
+### 2022-07-11 ~ 2022-07-17 重点工作：
+1. 机器人适配到github代码平台。————wanghao
+2. 将github以及gitlab平台的机器人服务部署上线。————wanghao
