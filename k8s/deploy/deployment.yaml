@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <deployment-name>
+  namespace: <namespace>
+spec:
+  replicas: <replicas-number>           # defined by develop
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: <pod-label>
+  template:
+    metadata:
+      labels:
+        app: <pod-label>
+    spec:
+      containers:
+      - name: <container-name>
+        image: <image-path>:<image-tag>
+        imagePullPolicy: IfNotPresent

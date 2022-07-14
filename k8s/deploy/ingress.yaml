@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: <ingress-controller>    # default:ingress   
+  name: <ingress-name>
+  namespace: <namespace>
+spec:
+  tls:
+  - hosts:
+    - <domain>
+    secretName: <secret-name>
+  rules:
+  - host: <domain>
+      http:
+        paths:
+          - backend:
+              serviceName: <service-name>
+              servicePort: 80
+            path: /
