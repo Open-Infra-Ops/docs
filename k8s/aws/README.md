@@ -1,7 +1,7 @@
 # AWS eks集群创建及使用
 Kubernetes版本1.22<br>
 ## 环境
-kubectl 1.22版本（建议与Kubernetes版本保持一致
+kubectl 1.22版本（建议与Kubernetes版本保持一致)<br>
 aws cli   2.7.16（安装最新版本即可)<br>
 **kubectl安装**<br>
 curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl<br>
@@ -26,10 +26,10 @@ sudo ./aws/install<br>
 注意：集群创建完成后，在linux机器上需要通过aws cli配置用户信息，由于在管理控制台创建的集群，<br>
 所以，集群创建用户为**AWS 根用户**<br>
 **aws configure**<br>
-**AWS Access Key ID**：<根用户AK><br>
-**AWS Secret Access Key**：<根用户SK><br>
-**Default region name**：<集群region><br>
-**Default output format**：json<br>
+AWS Access Key ID：<根用户AK><br>
+AWS Secret Access Key：<根用户SK><br>
+Default region name：<集群region><br>
+Default output format：json<br>
 **aws sts get-caller-identity** #配置完成，可使用该命令查询当前aws cli使用用户信息，显示格式类似<br>
 {<br>
     "UserId": "xxx",<br>
