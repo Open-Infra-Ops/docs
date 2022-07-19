@@ -2,18 +2,18 @@
 Kubernetes版本1.22<br>
 ## 环境
 kubectl 1.22版本（建议与Kubernetes版本保持一致
-aws cli   2.7.16（安装最新版本即可<br>
+aws cli   2.7.16（安装最新版本即可)<br>
 **kubectl安装**<br>
-curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl
-chmod +x ./kubectl
-mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
+curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl<br>
+chmod +x ./kubectl<br>
+mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin<br>
 kubectl version --short --client<br>
 
 **aws cli安装**<br>
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
- ./aws/install -i `/usr/local/aws-cli` -b `/usr/local/bin`
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"<br>
+unzip awscliv2.zip<br>
+sudo ./aws/install<br>
+ ./aws/install -i `/usr/local/aws-cli` -b `/usr/local/bin`<br>
  aws --version<br>
 
 
