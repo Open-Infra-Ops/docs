@@ -1,8 +1,8 @@
 # AWS eks集群创建及使用
 Kubernetes版本1.22<br>
 ## 环境
-kubectl 1.22版本（建议与Kubernetes版本保持一致）<br>
-aws cli   2.7.16（安装最新版本即可）<br>
+kubectl 1.22版本（建议与Kubernetes版本保持一致
+aws cli   2.7.16（安装最新版本即可<br>
 **kubectl安装**<br>
 curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl
 chmod +x ./kubectl
@@ -31,10 +31,10 @@ sudo ./aws/install
 **Default region name**：<集群region><br>
 **Default output format**：json<br>
 **aws sts get-caller-identity** #配置完成，可使用该命令查询当前aws cli使用用户信息，显示格式类似<br>
-{
-    "UserId": "xxx",
-    "Account": "xxx",
-    "Arn": "arn:aws:iam::xxx:root"
+{<br>
+    "UserId": "xxx",<br>
+    "Account": "xxx",<br>
+    "Arn": "arn:aws:iam::xxx:root"<br>
 }<br>
 Kubeconfig创建分为**自动和手动**两种方式，本次实践采用**自动创建**<br>
 **aws eks update-kubeconfig --region [region-name] --name [cluster-name]**<br>
@@ -43,7 +43,7 @@ Updated context arn:aws:eks:[region-name]:[account-id]:cluster/<cluster-name> in
 
 # 问题处理
 ## **error: You must be logged in to the server (Unauthorized)**
-出现场景<br>
+**出现场景**<br>
 **kubectl get svc --kubeconfig=./config**<br>
 该问题表明aws cli未登陆，分析发现，aws cli配置的用户信息非集群的创建者，而是登陆aws根用户在aws控制台手动创建集群后，使用IAM用户登陆aws cli，虽然该IAM用户具有eks集群的部分权限，但是由于该用户并非集群的创建用户，集群的role信息中没未对该用户授权。<br>
 **官方解释**<br>
