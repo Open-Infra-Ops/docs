@@ -21,3 +21,25 @@
 ### 2022-07-11 ~ 2022-07-17 重点工作：
 1. 机器人适配到github代码平台。————wanghao
 2. 将github以及gitlab平台的机器人服务部署上线。————wanghao
+3. 完成jenkins恢复机制对接lookeng和gauss。————zhuchao
+4. 启动开发ecs虚拟机监控部署。————zhuchao
+5. 处理OBS匿名访问安全整改。————zhaochunjiang
+6. openEuler组织下CI门禁服务上线。————liuqi
+7. 处理公司内部对接ZOOM会议一场问题，输出指导。————liuqi
+8. Jumper-server服务容器化调整。————zhaochunjiang
+9. 羲和测试平台服务上线。————liuyang
+
+### 2022-07-18 ~ 2022-07-24 重点工作：
+1. 预研AWS集群管理，在欧洲站点上线repo服务。————liuyang
+2. 处理openEuler吐槽大会相关问题：pr统计，邮件通知。————liuqi
+3. 6个华为云社区账号管理员权限拆分落地。————zhaochunjiang
+4. CDN加速服务对接openEuler社区。————liuyang
+5. github机器人完成上线服务。————wanghao
+6. 开发CCE-exporter服务对接华为云CCE，完成CCE监控数据统计。————zhuchao
+7. openEuler Kernel仓库支持PR合入的定制化CI-bot需求。————wanghao
+8. 华为云OBS匿名公开访问问题溯源处理。————caozhi
+9. openEuler仓库代码扫描发现openeuler-os-build中对出泄漏机器密码问题处理。————caozhi
+
+
+
+
