@@ -40,7 +40,10 @@ kubectl
 
  - **使用对象**<br>
  k8s集群管理员
- 
+
+ - **权限适配**<br>
+根据需要，修改rbac.yaml中的权限配置
+
  - **执行命令**<br>
  ./script.sh namespace cluster_name kubeconfig_path apiserver_url cluster_user<br>      # **namespace**，授权的命名空间<br>       # **cluster_name** ，集群名称<br>      # **kubeconfig_path**，生成的kubeconfig存放路径<br>  # **apiserver_url**，集群apiserver地址，格式**https://10.0.1.100:5443**<br>     # **cluster_user**，创建的kubeconfig用户对象名
 
