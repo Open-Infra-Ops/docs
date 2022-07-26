@@ -4,6 +4,7 @@
 |服务类别|		|前端/后端| |
 |服务介绍|		|简单描述该服务的功能| |
 |Dockerfile|		|gitee/github仓库地址| |
+|CPU架构|		|arm/x86| |
 |端口|		|服务对外暴露端口| |
 |环境变量/配置文件|		|安全需要，如服务涉及数据库参数适配、第三方工具token，建议使用环境变量或配置文件挂载方式导入，环境变量请单独提供变量名和值，配置文件请提供模板和挂载路径.| |
 |域名|		|"安全需要，服务对外暴露通过域名，不适用ip+port的形式，前端服务请确认使用的域名, 测试环境: *.test.osinfra.cn，生产环境: *.osinfra.cn、*.openeuler.org、*.openeuler.sh、*.mindspore.cn、*.opengauss.org、*.openlookeng.io"| |
