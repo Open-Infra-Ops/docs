@@ -21,3 +21,28 @@ spec:
       - name: <container-name>
         image: <image-path>:<image-tag>
         imagePullPolicy: IfNotPresent
+        env:
+        - name: <env1>
+          valueFrom:
+            secretKeyRef:
+              name: <secret-name>
+              key: <value1>
+        resources:
+          requests:
+            cpu: <min-cpu>        #2000m
+            memory: <min-memory>  #2000Mi
+          limits:
+            cpu: <max-cpu>        #2000m
+            memory: <max-cpu>     #2000Mi
+        volumeMounts:
+        - mountPath: <mount-path1>
+          name: <file-name1>
+        - mountPath: <mount-path2>
+          name: <file-name2>
+      volumes:
+      - configMap:
+          name: <configmap-name>
+        name: <file-name>
+      - name: <file-name2>
+        secret:
+          secretName: <secret-name2>

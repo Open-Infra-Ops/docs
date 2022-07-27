@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - <domain>
-    secretName: <secret-name>
+    secretName: <tls-name>
   rules:
   - host: <domain>
       http:
