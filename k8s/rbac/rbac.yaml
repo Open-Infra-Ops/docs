@@ -30,6 +30,7 @@ rules:
   - pods/exec
   verbs:
   - exec
+  - create
 - apiGroups:
   - ""
   resources:
