@@ -19,6 +19,8 @@
    + 高危端口扫描工具： [scan_port](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/scan_port)
    + 华为云安全策略组更新工具： [security_group](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/security_group)
 
+2. [性能监控](https://github.com/Open-Infra-Ops/monitor)
+
 五、运维平台
 1. [运维平台open-infra](https://github.com/Open-Infra-Ops/open-infra)
 
