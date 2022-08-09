@@ -8,9 +8,20 @@
 1. [通过配置kubeconfig文件实现集群权限精细化管理](https://github.com/Open-Infra-Ops/ops-docs/blob/main/k8s/rbac/README.md)
 2. [一个构建镜像的优化示例](https://github.com/Open-Infra-Ops/ops-docs/blob/main/docker-build/example-01/Note.md)
 
-三、Jenkins备份恢复知识库：
+三、Jenkins知识库：
+1. [jenkins资源备份和恢复](https://github.com/Open-Infra-Ops/jenkins-tools)
+
+四、华为云知识库：
+1. [华为云工具库](https://github.com/Open-Infra-Ops/jenkins-tools)
+
+   + 华为云弹性公网扫描工具： [elastic_public_ip](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/elastic_public_ip)
+   + 匿名访问对象存储资源扫描工具： [scan_obs](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/scan_obs)
+   + 高危端口扫描工具： [scan_port](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/scan_port)
+   + 华为云安全策略组更新工具： [security_group](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/security_group)
+
+五、运维平台
+1. [运维平台open-infra](https://github.com/Open-Infra-Ops/open-infra)
 
 
-四、扫描工具知识库：
 
 
