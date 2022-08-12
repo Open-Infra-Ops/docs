@@ -43,4 +43,6 @@
 ### 2022-08-08 ~ 2022-08-14 重点工作：
 1. opengauss针对pr和issue添加评论进行sig组和maintainers的指引，以及整合yaml。————wanghao
 2. linkpull需求在review机器人中适配。————wanghao
+3. 发送各sig的开启pr统计周报的脚本编写与功能扩展，在jenkins上创建对应工程并通过调试。————liuqi
+4. 参与src-openeuler的pr依赖合入方案讨论，在jenkins上创建多种场景触发的工程并通过调试。————liuqi
 
