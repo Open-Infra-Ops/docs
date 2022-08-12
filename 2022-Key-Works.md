@@ -45,4 +45,5 @@
 2. linkpull需求在review机器人中适配。————wanghao
 3. 发送各sig的开启pr统计周报的脚本编写与功能扩展，在jenkins上创建对应工程并通过调试。————liuqi
 4. 参与src-openeuler的pr依赖合入方案讨论，在jenkins上创建多种场景触发的工程并通过调试。————liuqi
+5. openEuler官网日历SIG的会议数据接口优化，已合入未上线。————liuqi
 
