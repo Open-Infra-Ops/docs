@@ -41,6 +41,6 @@
 9. openEuler仓库代码扫描发现openeuler-os-build中对出泄漏机器密码问题处理。————caozhi
 
 ### 2022-08-08 ~ 2022-08-14 重点工作：
-1.opengauss针对pr和issue添加评论进行sig组和maintainers的指引，以及整合yaml。————wanghao
-2.linkpull需求在review机器人中适配。————wanghao
+1. opengauss针对pr和issue添加评论进行sig组和maintainers的指引，以及整合yaml。————wanghao
+2. linkpull需求在review机器人中适配。————wanghao
 
