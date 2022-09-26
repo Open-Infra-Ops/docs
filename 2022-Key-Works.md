@@ -40,6 +40,14 @@
 8. 华为云OBS匿名公开访问问题溯源处理。————caozhi
 9. openEuler仓库代码扫描发现openeuler-os-build中对出泄漏机器密码问题处理。————caozhi
 
-
-
+### 2022-08-08 ~ 2022-08-14 重点工作：
+1. opengauss针对pr和issue添加评论进行sig组和maintainers的指引，以及整合yaml。————wanghao
+2. linkpull需求在review机器人中适配。————wanghao
+3. 发送各sig的开启pr统计周报的脚本编写与功能扩展，在jenkins上创建对应工程并通过调试。————liuqi
+4. 参与src-openeuler的pr依赖合入方案讨论，在jenkins上创建多种场景触发的工程并通过调试。————liuqi
+5. openEuler官网日历SIG的会议数据接口优化，已合入未上线。————liuqi
+6. 针对openEuler官网对接CDN后根据源IP地域切换语言版本失败问题，调试验证新镜像，已完成测试待发布 ————liuyang
+7. 根据羲和项目需求，部署前后端服务测试环境及流水线，已初步打通前后端通信，满足开发前期需求 ————liuyang
+8. 华为云高危端口扫描工具和obs对象系统匿名桶敏感文件扫描工具服务化，已上线两个版本，分别对内和对外使用, 已完成。  ————zhuchao 
+9. exim4.95版本使用tls和auth认证，已完成自测，上线osinfra。  ————zhuchao
 
