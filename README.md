@@ -25,6 +25,9 @@
 五、运维平台
 1. [运维平台open-infra](https://github.com/Open-Infra-Ops/open-infra)
 
+六、基础设施服务上线checklist
+1. [checklist](https://github.com/Open-Infra-Ops/docs/tree/main/checklist)
+
 
 
 
