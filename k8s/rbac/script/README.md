@@ -45,14 +45,10 @@ kubectl
 根据需要，修改rbac.yaml中的权限配置
 
  - **执行命令**<br>
- ./script.sh namespace cluster output_kubeconfig_path apiserver_url user role cluster_kubeconfig<br>      # **namespace**，授权的命名空间<br>       # **cluster_name** ，集群名称<br>      # **kubeconfig_path**，生成的kubeconfig存放路径<br>  # **apiserver_url**，集群apiserver地址，格式**https://10.0.1.100:5443**<br>     # **user**，创建的kubeconfig用户对象名<br>
- # ** role **,选择三种角色之一（viewer/developer/admin）<br>     # **cluster_kubeconfig**,授权集群的kubeconfig文件绝对路径
+ ./script.sh namespace cluster output_kubeconfig_path apiserver_url user role cluster_kubeconfig<br>      # **namespace**，授权的命名空间<br>       # **cluster_name** ，集群名称<br>      # **kubeconfig_path**，生成的kubeconfig存放路径<br>  # **apiserver_url**，集群apiserver地址，格式**https://10.0.1.100:5443**<br>     # **user**，创建的kubeconfig用户对象名<br>       # **role **,选择三种角色之一（viewer/developer/admin）<br>     # **cluster_kubeconfig**,授权集群的kubeconfig文件绝对路径
 
 # 权限删除
-./deleteRoleScript.sh namespace cluster_kubeconfig_path user role<br>      # **namespace**，授权的命名空间<br>
-# **cluster_kubeconfig_path** ，授权集群kubeconfig文件绝对路径<br>
-# **user**，创建的kubeconfig用户对象名<br>
-# **role**，选择所授权的三种角色之一（viewer/developer/admin）<br>
+./deleteRoleScript.sh namespace cluster_kubeconfig_path user role<br>      # **namespace**，授权的命名空间<br>      # **cluster_kubeconfig_path** ，授权集群kubeconfig文件绝对路径<br>      # **user**，创建的kubeconfig用户对象名<br>      # **role**，选择所授权的三种角色之一（viewer/developer/admin）<br>
 
 
 # 参考文献
