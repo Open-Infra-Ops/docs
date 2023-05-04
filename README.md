@@ -19,6 +19,7 @@
    + 匿名访问对象存储资源扫描工具： [scan_obs](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/scan_obs)
    + 高危端口扫描工具： [scan_port](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/scan_port)
    + 华为云安全策略组更新工具： [security_group](https://github.com/Open-Infra-Ops/huaweicloud-tools/tree/main/security_group)
+   + terraform工具： [terraform](https://github.com/Open-Infra-Ops/huaweicloud-tools/blob/main/terraform/terraform%E6%80%BB%E7%BB%93.md)
 
 2. [性能监控](https://github.com/Open-Infra-Ops/monitor)
 
