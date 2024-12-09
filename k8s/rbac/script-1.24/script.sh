@@ -23,7 +23,7 @@ if [ $1 != "" ] && [ $2 != "" ] && [ $3 != "" ] && [ $4 != "" ] && [ $5 != "" ] 
     sed -i "s|<myrolebinding>|$roleBingding|g" ./$operateRole
 
     kubectl apply -f ./$operateRole --kubeconfig=$cluster_kubeconfig
-    secret_name=$(kubectl get secret -n $namespace --kubeconfig=$cluster_kubeconfig| grep $sa | awk '{print $1}')
+    secret_name=$(kubectl get secret -n $namespace --kubeconfig=$cluster_kubeconfig| grep $sa | awk 'NR==1 {print $1}')
     echo "secret_name=$secret_name"
 
     token=$(kubectl describe secret $secret_name -n $namespace --kubeconfig=$cluster_kubeconfig| awk '/token:/{print $2}')
